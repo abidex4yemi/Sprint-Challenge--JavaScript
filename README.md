@@ -30,13 +30,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+  *In Javascript `.forEach` & `.map` are use to cycle or loop over an array and they both take in a callback function but `.forEach` doesn't return anything is meant for computation of an array while `.map` returns a new array.*
+
 2. What is the difference between a function and a method?
+
+  *Function and methods are the same the difference is the context at which they exist within and invoked*
 
 3. What is closure?
 
+  *Closures is the combination of a function and the lexical environment within which the function was declared. Closures are useful because they let us associate some data (the lexical environment) with a function that operates on that data [source MDN]*
+
+  *A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables or scope (a scope chain). The closure has three scope chains: `Local Scope (Own scope)` , `Outer Functions Scope`, `Global Scope`.*
+
 4. Describe the four rules of the 'this' keyword.
 
+  - In the global execution context, `outside of any function`, this refers to the global
+     `Object` whether in strict mode or not.
+  
+  
+  - When a function is called as a method of an object, its this is set to the object the method is called on.
+  
+  - When a function is used as a constructor `with the new keyword`, its `this` is bound to the new object being constructed. The same notion holds true for methods defined somewhere on the object's prototype chain. If the method is on an object's prototype chain, this refers to the object that the method was called on, as if the method were on the object.
+  
+  - The `this` keyword inside a function, the value of this depends on how the function is called. So, in strict mode, if this was not defined by the execution context, it remains undefined. The `this` can be set explicitly to pass the value of this from one context to another using bind(), call(), or apply() method all functions inherit from `Object.prototype`. which is sometimes called method borrowing.
+
 5. Why do we need super() in an extended class?
+
+  *In javascript the super() method is used by a child class that extends a parent class to invoke a parent inherited class constructor method and also implicitly setting the child prototype chain to it's parent prototype*
 
 ## Project Set up
 
