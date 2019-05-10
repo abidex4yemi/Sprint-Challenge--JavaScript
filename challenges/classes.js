@@ -7,7 +7,7 @@
 */
 
 class CuboidMakerClass {
-	constructor({ length, width, height }) {
+	constructor(length, width, height) {
 		this.length = length;
 		this.width = width;
 		this.height = height;
@@ -23,11 +23,9 @@ class CuboidMakerClass {
 }
 
 class CubeMaker extends CuboidMakerClass {
-	constructor() {
-		super({ length, width, height });
+	constructor(length) {
+		super(length, length, length);
 	}
-
-	surfaceArea() {}
 }
 
 /* == Step 2: Volume Method ==
@@ -48,11 +46,14 @@ class CubeMaker extends CuboidMakerClass {
 */
 
 // Instantiate CuboidMaker
-const cuboidClass = new CuboidMakerClass({
-	length: 4,
-	width: 5,
-	height: 5
-});
+const cuboidClass = new CuboidMakerClass(4, 5, 5);
+
+// Instantiate CubeMaker
+const cube = new CubeMaker(3);
+
+// test cube
+console.log(cube.volume());
+console.log(cube.surfaceArea());
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid.volume()); // 100
