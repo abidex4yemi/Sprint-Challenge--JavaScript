@@ -30,32 +30,52 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+  *In Javascript `.forEach` & `.map` are use to cycle or loop over an array and they both take in a callback function but `.forEach` doesn't return anything is meant for computation of an array while `.map` returns a new array.*
+
 2. What is the difference between a function and a method?
+
+  *Function and methods are the same the difference is the context at which they exist within and invoked*
 
 3. What is closure?
 
+  *Closures is the combination of a function and the lexical environment within which the function was declared. Closures are useful because they let us associate some data (the lexical environment) with a function that operates on that data [source MDN]*
+
+  *A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables or scope (a scope chain). The closure has three scope chains: `Local Scope (Own scope)` , `Outer Functions Scope`, `Global Scope`.*
+
 4. Describe the four rules of the 'this' keyword.
 
+  - In the global execution context, `outside of any function`, this refers to the global
+     `Object` whether in strict mode or not.
+  
+  
+  - When a function is called as a method of an object, its this is set to the object the method is called on.
+  
+  - When a function is used as a constructor `with the new keyword`, its `this` is bound to the new object being constructed. The same notion holds true for methods defined somewhere on the object's prototype chain. If the method is on an object's prototype chain, this refers to the object that the method was called on, as if the method were on the object.
+  
+  - The `this` keyword inside a function, the value of this depends on how the function is called. So, in strict mode, if this was not defined by the execution context, it remains undefined. The `this` can be set explicitly to pass the value of this from one context to another using bind(), call(), or apply() method all functions inherit from `Object.prototype`. which is sometimes called method borrowing.
+
 5. Why do we need super() in an extended class?
+
+  *In javascript the super() method is used by a child class that extends a parent class to invoke a parent inherited class constructor method and also implicitly setting the child prototype chain to it's parent prototype*
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add PM as collaborator on Github.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [X] You are now ready to build this project with your preferred IDE
+- [X] Implement the project on your Branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [X] Add your Project Manager as a Reviewer on the Pull-request
+- [X] PM then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
@@ -66,19 +86,19 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [X] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [X] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [X] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [X] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
